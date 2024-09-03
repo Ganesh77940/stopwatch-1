@@ -1,0 +1,71 @@
+:root {
+    --background-color: #121212;
+    --primary-color: #1abc9c; /* Bright green */
+    --secondary-color: #16a085; /* Darker green */
+    --text-color: #ffffff;
+    --accent-color: #e74c3c; /* Red for accents */
+    --font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.stopwatch {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.heading h1 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.display {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.controls button {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 0.8rem 2rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: var(--secondary-color);
+}
+
+.controls button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.laps {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.laps li {
+    background-color: #1e1e1e;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin: 0.5rem 0;
+    color: var(--accent-color);
+}
